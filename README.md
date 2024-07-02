@@ -17,7 +17,7 @@ Appointment table to Bigquery：從客服系統網站提取資料並上傳至Big
 >
 >資料匯入：將清洗過的數據上傳至BigQuery資料集中的特定表格。
 
-這兩個腳本分別處理不同來源的數據，經過清洗後將其匯入至BigQuery，解決數據流程自動化及集中管理的情境需求。
+這兩個腳本分別處理不同來源的數據，經過清洗後將其匯入至BigQuery，解決數據流程自動化及集中管理的需求。
 
 # data_flow
 ![Flowchart-3](https://github.com/eatinglai/data_pipeline/assets/139863864/1431487f-4811-4117-830e-fd06d8eb175a)
