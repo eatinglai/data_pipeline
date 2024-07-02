@@ -1,26 +1,23 @@
 # data_pipeline
 
-使用Python和Selenium自動化一系列網頁操作，並將數據導入Google BigQuery。
+Clinic table to Bigquery：從診所系統提取資料並上傳至BigQuery
+這個腳本主要從診所端的顧客系統資料庫提取數據，經過清洗和篩選後上傳至BigQuery資料集中的特定表格。
 
-模組： random、selenium、datetime、pandas 和 google.cloud.bigquery ，用於網頁操作、時間處理和數據操作。
+資料提取：從診所顧客系統資料庫使用SQL語句篩選多張表的特定欄位。
+資料清洗：使用Python Pandas進行數據清洗和篩選。
+資料匯入：將清洗過的數據上傳至BigQuery資料集中的特定表格。
 
-基本設定：定義各種變量，如執行次數、等待時間、賬戶信息、數據表等，並設置Chrome瀏覽器的選項。
+Appointment table to Bigquery：從客服系統網站提取資料並上傳至BigQuery
+這個腳本主要從客服系統網站提取數據，經過清洗和篩選後上傳至BigQuery資料集中的特定表格。
 
-登錄功能：自動填寫並提交登錄表單，以訪問指定的網頁。
+資料提取：使用爬蟲技術從客服系統網站提取數據。
+資料清洗：使用Python Pandas進行數據清洗和篩選。
+資料匯入：將清洗過的數據上傳至BigQuery資料集中的特定表格。
 
-顯示每頁數據：調整網頁設置以顯示更多數據，每頁顯示100條記錄。
-
-提取表格數據：從網頁表格中提取數據，存儲在列表中。
-
-循環提取數據：多次翻頁以提取更多數據，直到達到預設的數據量。
-
-數據清理：清理和處理提取的數據，將其轉換為DataFrame格式，並篩選特定日期的數據。
-
-上傳數據：將清理後的數據上傳至Google BigQuery，並檢查上傳結果。
-
-用於自動化數據收集和處理，實現需要定期從網頁提取數據並存儲到BigQuery中的情境。
+這兩個腳本分別處理不同來源的數據，經過清洗後將其匯入至BigQuery，從而實現數據的集中管理和分析。
 
 # data_flow
 
-![Flowchart](https://github.com/eatinglai/data_pipeline/assets/139863864/6a290fb6-7c41-43b1-a7b6-d31483d854d2)
+![Flowchart-2](https://github.com/eatinglai/data_pipeline/assets/139863864/3c06469e-554f-4046-8b11-94d26fc7ab0d)
+
 
