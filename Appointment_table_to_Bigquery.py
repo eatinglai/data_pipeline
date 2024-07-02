@@ -29,7 +29,7 @@ options.add_argument("--disable-blink-features=AutomationControlled")
 options.add_argument("user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36")
 service = webdriver.ChromeService(executable_path=Path)
 driver = webdriver.Chrome(service=service, options=options)
-service_account_json = "/your_path/earnest-monitor-426507-p4-b07f51dec7ad.json" 
+service_account_json = "/your_path/key.json" 
 client = bigquery.Client.from_service_account_json(service_account_json)
 # 指定目標資料集和表格
 table_id = 'project.dataset.table'
