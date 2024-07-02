@@ -11,7 +11,7 @@ Clinic table to Bigquery：從診所系統提取資料並上傳至BigQuery，主
 Appointment table to Bigquery：從客服系統網站提取資料並上傳至BigQuery，主要從客服系統網站提取數據，經過清洗和篩選後上傳至BigQuery資料集中的特定表格。
 
 
-資料提取：使用爬蟲技術從客服系統網站提取數據。
+資料提取：使用selenium 爬蟲從客服系統網站提取數據。
 
 資料清洗：使用Python Pandas進行數據清洗和篩選。
 
