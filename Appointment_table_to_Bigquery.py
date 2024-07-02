@@ -85,7 +85,7 @@ def retrieve_table():
         return table_streaming
     except Exception as e:
         print(f"發生錯誤: {e}")
-        print("retrieve_tables error!")
+        print("retrieve_table error!")
         time.sleep(2)
 
 def retrieve_loop():
@@ -139,8 +139,8 @@ def data_cleaning():
     display_missing()
     df1['Closed Timestamp'] = pd.to_datetime(df['Closed Timestamp'], format='%B %d, %Y %I:%M %p')
     df2 = df1[(df1['Closed Timestamp'] >= yesterday) & (df1['Closed Timestamp'] < yesterday + timedelta(days=1))]
-    print(f"ALL table: {df1.head(2)}")
-    print(f"Yesterday table: {df2.head(2)}")
+    print(f"table of all: {df1.head(2)}")
+    print(f"table of yesterday: {df2.head(2)}")
     print("Data of list have been saved")
 
 def upload():# 將DataFrame寫入BigQuery
