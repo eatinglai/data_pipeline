@@ -21,4 +21,6 @@
 用於自動化數據收集和處理，實現需要定期從網頁提取數據並存儲到BigQuery中的情境。
 
 # data_flow
-![Flowchart](https://github.com/eatinglai/data_pipeline/assets/139863864/0f5cd130-fc90-4e0f-be9e-ef110bcc91eb)
+
+![Flowchart](https://github.com/eatinglai/data_pipeline/assets/139863864/6a290fb6-7c41-43b1-a7b6-d31483d854d2)
+
